@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>For My Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="garden-shell">
+      <section class="intro" aria-labelledby="title">
+        <p class="kicker">A little garden, just for you</p>
+        <h1 id="title">Every flower is something I love about you.</h1>
+        <p class="subtitle">
+          Tap the flowers and let them open. Each one carries a note I wanted you to keep.
+        </p>
+      </section>
+
+      <section class="garden" aria-label="Interactive flower messages">
+        <div class="sky-glow" aria-hidden="true"></div>
+        <div class="message-card" id="messageCard" aria-live="polite">
+          <span class="message-count" id="messageCount">Pick a flower</span>
+          <p id="messageText">I made this tiny garden because loving you makes ordinary things feel magical.</p>
+        </div>
+
+        <button class="flower flower-one" type="button" data-index="0" aria-label="Open message one">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower flower-two" type="button" data-index="1" aria-label="Open message two">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower flower-three" type="button" data-index="2" aria-label="Open message three">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower flower-four" type="button" data-index="3" aria-label="Open message four">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower flower-five" type="button" data-index="4" aria-label="Open message five">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <div class="ground" aria-hidden="true"></div>
+      </section>
+
+      <section class="final-note">
+        <button class="love-button" type="button" id="surpriseButton">Open one more note</button>
+        <p class="surprise" id="surprise" hidden>
+          No matter where life takes us, my favorite place is anywhere I get to make you smile.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
