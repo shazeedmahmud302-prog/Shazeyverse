@@ -1,11 +1,11 @@
 const messages = [
-  "Your smile is still my favorite thing to accidentally think about.",
-  "You make the world feel softer, brighter, and much more worth noticing.",
-  "I love the way you turn simple moments into memories I want to replay.",
-  "Being loved by you feels like finding spring in the middle of a long day.",
-  "If I could give you a flower for every reason I adore you, this garden would never end.",
-  "You are my favorite hello and the sweetest part of every day.",
-  "I hope this little rose reminds you how deeply you are loved.",
+  "Your smile is my favorite thing to hear and get kilig about",
+  "You make the world feel softer, brighter, and much more worth noticing",
+  "I love the way you turn simple moments into memories I want to replay",
+  "Being loved by you feels like finding spring in the middle of a long long day",
+  "If I could give you a flower for every reason I adore you, this garden would never end",
+  "I hope this little rose reminds you how deeply you are loved by me and your favourite ones there",
+  "You are my favorite notification and the sweetest part of every day. I love you so much mwaaah",
   "Every day with you feels like another flower blooming in my heart."
 ];
 
