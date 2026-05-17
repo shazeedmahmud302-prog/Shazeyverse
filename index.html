@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <section class="opening-screen" id="openingScreen" aria-label="Opening love note">
+      <div class="opening-hearts" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="photo-frame">
+        <img src="her-photo.jpg" alt="My favorite person" id="openingPhoto">
+        <div class="photo-fallback" id="photoFallback">Add her photo here</div>
+      </div>
+      <p class="opening-kicker">Before the garden opens</p>
+      <h2>This little world was made for you.</h2>
+      <p class="opening-copy">Wait a second. I have something blooming for you.</p>
+      <button class="enter-button" type="button" id="enterGarden">Open the garden</button>
+    </section>
+
     <main class="garden-shell">
       <section class="intro" aria-labelledby="title">
         <p class="kicker">A little garden, just for you</p>
@@ -26,12 +42,16 @@
           <p id="messageText">I made this tiny garden because loving you makes ordinary things feel magical.</p>
         </div>
 
-        <button class="flower flower-one" type="button" data-index="0" aria-label="Open message one">
+        <button class="flower daisy blue flower-one" type="button" data-index="0" aria-label="Open message one">
           <span class="bloom">
             <span class="petal petal-a"></span>
             <span class="petal petal-b"></span>
             <span class="petal petal-c"></span>
             <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="petal petal-f"></span>
+            <span class="petal petal-g"></span>
+            <span class="petal petal-h"></span>
             <span class="center"></span>
           </span>
           <span class="stem"></span>
@@ -39,12 +59,11 @@
           <span class="leaf leaf-right"></span>
         </button>
 
-        <button class="flower flower-two" type="button" data-index="1" aria-label="Open message two">
+        <button class="flower tulip yellow flower-two" type="button" data-index="1" aria-label="Open message two">
           <span class="bloom">
             <span class="petal petal-a"></span>
             <span class="petal petal-b"></span>
             <span class="petal petal-c"></span>
-            <span class="petal petal-d"></span>
             <span class="center"></span>
           </span>
           <span class="stem"></span>
@@ -52,12 +71,14 @@
           <span class="leaf leaf-right"></span>
         </button>
 
-        <button class="flower flower-three" type="button" data-index="2" aria-label="Open message three">
+        <button class="flower lily white flower-three" type="button" data-index="2" aria-label="Open message three">
           <span class="bloom">
             <span class="petal petal-a"></span>
             <span class="petal petal-b"></span>
             <span class="petal petal-c"></span>
             <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="petal petal-f"></span>
             <span class="center"></span>
           </span>
           <span class="stem"></span>
@@ -65,12 +86,16 @@
           <span class="leaf leaf-right"></span>
         </button>
 
-        <button class="flower flower-four" type="button" data-index="3" aria-label="Open message four">
+        <button class="flower daisy white flower-four" type="button" data-index="3" aria-label="Open message four">
           <span class="bloom">
             <span class="petal petal-a"></span>
             <span class="petal petal-b"></span>
             <span class="petal petal-c"></span>
             <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="petal petal-f"></span>
+            <span class="petal petal-g"></span>
+            <span class="petal petal-h"></span>
             <span class="center"></span>
           </span>
           <span class="stem"></span>
@@ -78,12 +103,56 @@
           <span class="leaf leaf-right"></span>
         </button>
 
-        <button class="flower flower-five" type="button" data-index="4" aria-label="Open message five">
+        <button class="flower tulip blue flower-five" type="button" data-index="4" aria-label="Open message five">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower rose pink flower-six" type="button" data-index="5" aria-label="Open message six">
           <span class="bloom">
             <span class="petal petal-a"></span>
             <span class="petal petal-b"></span>
             <span class="petal petal-c"></span>
             <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower rose yellow flower-seven" type="button" data-index="6" aria-label="Open message seven">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="center"></span>
+          </span>
+          <span class="stem"></span>
+          <span class="leaf leaf-left"></span>
+          <span class="leaf leaf-right"></span>
+        </button>
+
+        <button class="flower daisy yellow flower-eight" type="button" data-index="7" aria-label="Open message eight">
+          <span class="bloom">
+            <span class="petal petal-a"></span>
+            <span class="petal petal-b"></span>
+            <span class="petal petal-c"></span>
+            <span class="petal petal-d"></span>
+            <span class="petal petal-e"></span>
+            <span class="petal petal-f"></span>
+            <span class="petal petal-g"></span>
+            <span class="petal petal-h"></span>
             <span class="center"></span>
           </span>
           <span class="stem"></span>

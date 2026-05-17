@@ -3,7 +3,10 @@ const messages = [
   "You make the world feel softer, brighter, and much more worth noticing.",
   "I love the way you turn simple moments into memories I want to replay.",
   "Being loved by you feels like finding spring in the middle of a long day.",
-  "If I could give you a flower for every reason I adore you, this garden would never end."
+  "If I could give you a flower for every reason I adore you, this garden would never end.",
+  "You are my favorite hello and the sweetest part of every day.",
+  "I hope this little rose reminds you how deeply you are loved.",
+  "Every day with you feels like another flower blooming in my heart."
 ];
 
 const flowers = document.querySelectorAll(".flower");
@@ -12,6 +15,22 @@ const messageCount = document.querySelector("#messageCount");
 const messageText = document.querySelector("#messageText");
 const surpriseButton = document.querySelector("#surpriseButton");
 const surprise = document.querySelector("#surprise");
+const openingScreen = document.querySelector("#openingScreen");
+const enterGarden = document.querySelector("#enterGarden");
+const openingPhoto = document.querySelector("#openingPhoto");
+const photoFallback = document.querySelector("#photoFallback");
+
+function openGarden() {
+  openingScreen.classList.add("hide");
+}
+
+openingPhoto.addEventListener("error", () => {
+  openingPhoto.classList.add("missing");
+  photoFallback.classList.add("show");
+});
+
+enterGarden.addEventListener("click", openGarden);
+window.setTimeout(openGarden, 5200);
 
 function showMessage(index) {
   flowers.forEach((flower) => flower.classList.remove("active"));
