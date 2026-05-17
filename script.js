@@ -19,12 +19,26 @@ const openingScreen = document.querySelector("#openingScreen");
 const enterGarden = document.querySelector("#enterGarden");
 const openingPhoto = document.querySelector("#openingPhoto");
 const photoFallback = document.querySelector("#photoFallback");
+const photoOptions = [
+  "her-photo.jpg",
+  "her-photo.jpeg",
+  "her-photo.jpg.jpeg",
+  "her-photo.png"
+];
+let photoOptionIndex = 0;
 
 function openGarden() {
   openingScreen.classList.add("hide");
 }
 
 openingPhoto.addEventListener("error", () => {
+  photoOptionIndex += 1;
+
+  if (photoOptionIndex < photoOptions.length) {
+    openingPhoto.src = photoOptions[photoOptionIndex];
+    return;
+  }
+
   openingPhoto.classList.add("missing");
   photoFallback.classList.add("show");
 });
